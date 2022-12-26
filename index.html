@@ -1,0 +1,958 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title> </title>
+	<meta charset='utf-8'>
+	<meta name='Viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.6'>
+	<meta name='Title' content='baskinrobbins'>
+	<meta name='Subject' content=''>
+	<meta name='Keywords' content=''>
+	<meta name='Author' content=''>
+	<meta name='Publisher' content=''>
+	<meta name='Description' content=''>
+	<meta name='Author-Date' content=''>
+	<meta name='Copyright' content=''>
+	<meta name='Robots' content='index,follow'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+	<meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="user-scalable=0;"/> 
+	<meta content="yes" name="apple-mobile-web-app-capable" />  
+	<meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalㅠable=no" name="viewport" />
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel='stylesheet' href='css/reset.css'>
+	<!-- swiper deomos -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+	<!-- 수정해야하는 친구들은 위로 가야함 -->
+	<!-- bx slider -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+	<link rel='stylesheet' href='css/style.css'>
+
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css' integrity='sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU' crossorigin='anonymous'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+
+
+
+	<script src="./js/jquery-2.2.4.min.js"></script>
+	<!-- 라이브러리 적는칸 -->
+	<!-- swiper deomos -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	
+	<!-- bx slider -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+	<script src="./js/script.js" defer></script>
+
+
+	<!--[if (lte IE 9)]>
+		<script src='js/lib/IE9.js'></script>
+	<![endif]-->
+
+	<!--[if (lte IE 8)]>
+		<script src='js/lib/html5shiv.min.js'></script>
+		<link rel='stylesheet' href='#'>
+	<![endif]-->
+
+	<!--[if (lte IE 7)]>
+		<link rel='stylesheet' href='#'>
+	<![endif]-->
+
+</head>
+<body id="br_main">
+<div>
+	<ul id="skip">
+		<li><a href="#header">헤더 바로가기</a></li>
+		<li><a href="#nav">메뉴 바로가기</a></li>
+		<li><a href="#content">내용 바로가기</a></li>
+	</ul>
+</div>
+<article id="wrap" class="br_main_main">
+    <header id="header">
+        <div class="inner_header">
+            <div class="top_area">
+                <div class="container">
+              		<div class="header_inner">
+              	      <h1 class="logo">
+	                        <a href="#" class="ir_pm">baskin robbins</a>
+	                    </h1>
+						<nav class="sns">
+							<ul class="cf">
+								<li><a href="#" target="_blank"><img src="./images/common/icon_facebook.png" alt="facebok"></a></li>
+								<li><a href="#" target="_blank"><img src="./images/common/icon_twitter.png" alt="twitter"></a></li>
+								<li><a href="#" target="_blank"><img src="./images/common/icon_blog.png" alt="blog"></a></li>
+								<li><a href="#" target="_blank"><img src="./images/common/icon_instgram.png" alt="instagram"></a></li>
+								<li><a href="#" target="_blank"><img src="./images/common/icon_youtube.png" alt="youtube"></a></li>
+								<!-- <li><a href="#" target="_blank"><img src="./images/common/btn_happypoint.png" alt="happyPoint"></a></li> -->
+							</ul>
+						</nav>
+						<nav class="etc">
+							<ul>
+								<li class="happyPoint"><a href="#"><img src="./images/common/btn_happypoint.png" alt="해피포인트"></a></li>
+								<li class="customer"><a href="#">고객센터</a></li>
+								<li class="contact"><a href="#">CONTACT US</a></li>
+								<li class="search" data-api="model"><a href="#" class="">search</a></li>
+							</ul>
+						</nav>
+              		</div>
+					<div class="mobile_header">
+						<ul>
+							<li>
+								<!-- 버튼 -->
+								<a href="#" class="app-btn">
+									<span class="bar bar1"></span>
+									<span class="bar bar2"></span>
+									<span class="bar bar3"></span>
+								</a>
+								<ul class="mobile-nav">
+									<li><a href="#">MENU</a></li>
+									<li><a href="#">영양성분 및 알레르기</a></li>
+									<li><a href="#">EVENT</a></li>
+									<li><a href="#">STORE</a></li>
+									<li><a href="#">ABOUT</a></li>
+									<li>
+										<a href="#">
+											<img src="./images/common/icon_facebook.png" alt="facebook">
+										</a>
+										<a href="#">
+											<img src="./images/common/icon_twitter.png" alt="twitter">
+										</a>
+										<a href="#">
+											<img src="./images/common/icon_blog.png" alt="blog">
+										</a>
+										<a href="#">
+											<img src="./images/common/icon_instgram.png" alt="instagram">
+										</a>
+										<a href="#">
+											<img src="./images/common/icon_youtube.png" alt="youtube">
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#" class="mobile-logo"><img src="./images/common/logo_baskinrobbins.png" alt="mobileLogo"></a></li>
+							<li><a href="#" class="mobile-find-btn"><img src="./images/common/icon_search.png" alt="serch"></a></li>
+						</ul>
+					</div>
+                </div>
+            </div>
+            <div class="menu_area">
+				<div class="container">
+					<nav class="member">
+						<ul class="cf">
+							<li class="login"><a href="#" target="_blank"><span>LOGIN</span></a></li>
+							<li class="join"><a href="./join.html" target="_blank"><span>JOIN</span></a></li>
+							<!-- <li class="HP"><a href="#" target="_blank"><span>HappyPoint</span></a></li> -->
+						</ul>
+					</nav>
+					<nav id="gnb">
+						<div class="gnb_wrap">
+							<ul class="cf">
+								<li class="gnb_depth1" style="display: none;">
+									<div id="bts" style="display:block; width: 160px; float: left; padding: 0 40px; line-height: 46px;"><a href="#"><img style="width: 100%; vertical-align: middle;" src="./images/common/gnb_dccomics.jpeg"></a></div>
+								</li>
+								<li class="gnb_depth1 gnb_flavor">
+									<div class="gnb_main"><a href="#"><span>FLAVOR OF THE MONTH</span></a></div>
+									<div class="gnb_sub"><a href="#"><img src="./images/common/img_monthly_fom_221130.png" alt="이달의 맛" style="margin-left:54px;"></a></div>
+								</li>
+								<li class="gnb_depth1 gnb_menu">
+									<div class="gnb_main">
+										<a href="#"><span>MENU</span></a>
+									</div>
+									<ul class="gnb_sub">
+										<li class="gnb_depth2"><a href="#"><span>아이스크림</span></a></li>
+										<li class="gnb_depth2"><a href="#"><span>아이스크림케익</span></a></li>
+										<li class="gnb_depth2"><a href="#"><span>음료</span></a></li>
+										<li class="gnb_depth2"><a href="#"><span>커피</span></a></li>
+										<li class="gnb_depth2"><a href="#"><span>디저트</span></a></li>
+									</ul>
+								</li>
+								<li class="gnb_depth1 gnb_nutrition">
+									<div class="gnb_main">
+										<a href="#"><span>영양성분 및 알레르기</span></a>
+									</div>
+									<ul class="gnb_sub">
+										<li class="gnb_depth2"><a href="#"><span>아이스크림</span></a></li>
+										<li class="gnb_depth2"><a href="#"><span>음료</span></a></li>
+										<li class="gnb_depth2"><a href="#"><span>커피</span></a></li>
+									</ul>
+								</li>
+								<li class="gnb_depth1 gnb_event">
+									<div class="gnb_main">
+										<a href="#"><span>EVENT</span></a>
+									</div>
+									<ul class="gnb_sub">
+										<li class="gnb_depth2"><a href="#"><span>진행중이벤트</span></a></li>
+										<li class="gnb_depth2"><a href="#"><span>당첨자발표</span></a></li>
+									</ul>
+								</li>
+								<li class="gnb_depth1 gnb_store">
+									<div class="gnb_main">
+										<a href="#"><span>STORE</span></a>
+									</div>
+									<ul class="gnb_sub">
+										<li class="gnb_depth2"><a href="#"><span>매장찾기</span></a></li>
+										<li class="gnb_depth2"><a href="#"><span>고객센터</span></a></li>
+										<li class="gnb_depth2"><a href="#"><span>단체주문</span></a></li>
+									</ul>
+								</li>
+								<li class="gnb_depth1 gnb_about">
+									<div class="gnb_main">
+										<a href="#"><span>ABOUT</span></a>
+									</div>
+									<ul class="gnb_sub">
+										<li class="gnb_depth2"><a href="#"><span>공지사항</span></a></li>
+										<li class="gnb_depth2"><a href="#"><span>보도자료</span></a></li>
+										<li class="gnb_depth2"><a href="#"><span>채용정보</span></a></li>
+										<li class="gnb_depth2"><a href="#"><span>점포개설문의</span></a></li>
+										<li class="gnb_depth2"><a href="#"><span>CONTACT US</span></a></li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						<div class="gnb_bg">
+							<div></div>
+						</div>
+					</nav>
+				</div>
+			</div>
+        </div>
+    </header>
+	<article id="content" class="main_wrap">
+		<div class="main_banner">
+			<div class="flavor_month">
+				<div class="top">
+					<a href="#"><img src="./images/main/1718096730.jpg" alt="이달의 맛"></a>
+				</div>
+			</div>
+		</div>	
+			<section id="slick_banner" class="slick_banner_box">
+				<div class="container">
+					<!-- <div class="bxslider"> -->
+						<!-- <div><img src="./images/main/1718097560.jpg" title="메인이미지1"></div>
+						<div><img src="./images/main/1657600885.jpg" title="메인이미지2"></div>
+						<div><img src="./images/main/1657589306.jpg" title="메인이미지3"></div>
+						<div><img src="./images/main/1718097210.jpg" title="메인이미지4"></div>
+						<div><img src="./images/main/1676003546.jpg" title="메인이미지5"></div>
+						<div><img src="./images/main/1670146295.png" title="메인이미지6"></div>
+						<div><img src="./images/main/1667539209.png" title="메인이미지7"></div>
+						<div><img src="./images/main/1667440402.png" title="메인이미지8"></div>
+						<div><img src="./images/main/1667383155.png" title="메인이미지9"></div>
+						<div><img src="./images/main/1643869369.png" title="메인이미지10"></div> -->
+						<div id="wrap">
+							<div class="slide">
+								<ul class="slideUl">
+									<li class="slide01"><a href="#" class="hidden">메인베너1</a></li>
+									<li class="slide02"><a href="#" class="hidden">메인베너2</a></li>
+									<li class="slide03"><a href="#" class="hidden">메인베너3</a></li>
+									<li class="slide04"><a href="#" class="hidden">메인베너3</a></li>
+									<li class="slide05"><a href="#" class="hidden">메인베너3</a></li>
+									<li class="slide06"><a href="#" class="hidden">메인베너3</a></li>
+									<li class="slide07"><a href="#" class="hidden">메인베너3</a></li>
+									<li class="slide08"><a href="#" class="hidden">메인베너3</a></li>
+									<li class="slide09"><a href="#" class="hidden">메인베너3</a></li>
+									<li class="slide10"><a href="#" class="hidden">메인베너3</a></li>
+								</ul>
+								<div class="arrowBtn">
+									<img src="./images/main/btn_banner_prev.png" alt="prev" class="prev" width="109" height="109">
+									<img src="./images/main/btn_banner_next.png" alt="next" class="next" width="109" height="109">
+								</div>
+								<ul class="pagerBtn">
+									<li class="on"><a href="#" class="hidden">1</a></li>
+									<li><a href="#" class="hidden">2</a></li>
+									<li><a href="#" class="hidden">3</a></li>
+									<li><a href="#" class="hidden">4</a></li>
+									<li><a href="#" class="hidden">5</a></li>
+									<li><a href="#" class="hidden">6</a></li>
+									<li><a href="#" class="hidden">7</a></li>
+									<li><a href="#" class="hidden">8</a></li>
+									<li><a href="#" class="hidden">9</a></li>
+									<li><a href="#" class="hidden">10</a></li>
+								</ul>
+							</div>
+						</div>
+					<!-- </div> -->
+				</div>
+			</section>
+			<section id="mobile_banner">
+				<h2 class="ir_so">모바일 슬라이더</h2>
+				<div class="container">
+					<div class="swiper mySwiper mobile">
+						<div class="swiper-wrapper ">
+						  <div class="swiper-slide mobile-slide"><img src="./images/main/1718097560.jpg" alt="메인베너1"></div>
+						  <div class="swiper-slide mobile-slide"><img src="./images/main/1657600885.jpg" alt="메인베너2"></div>
+						  <div class="swiper-slide mobile-slide"><img src="./images/main/1657589306.jpg" alt="메인베너3"></div>
+						  <div class="swiper-slide mobile-slide"><img src="./images/main/1678606087.jpeg" alt="메인베너3"></div>
+						  <div class="swiper-slide mobile-slide"><img src="./images/main/1676003546.jpg" alt="메인베너3"></div>
+						  <div class="swiper-slide mobile-slide"><img src="./images/main/1670146295.png" alt="메인베너3"></div>
+						  <div class="swiper-slide mobile-slide"><img src="./images/main/1667539209.png" alt="메인베너3"></div>
+						  <div class="swiper-slide mobile-slide"><img src="./images/main/1667440402.png" alt="메인베너3"></div>
+						  <div class="swiper-slide mobile-slide"><img src="./images/main/1667383155.png" alt="메인베너3"></div>
+						  <div class="swiper-slide mobile-slide"><img src="./images/main/1643869369.png" alt="메인베너3"></div>
+						</div>
+						<div class="swiper-pagination mobile-pager"></div>
+					  </div>
+				  
+				</div>
+			</section>
+			<section class="br_event">
+				<div class="container">
+					<h2 class="ir_so">이벤트 슬라이더</h2>
+					<h3 class="title">
+						<img src="./images/main/h_event.png" alt="event">
+					</h3>
+					<div class="event_list">
+						<div class="swiper mySwiper second">
+							<div class="swiper-wrapper">
+							  <div class="swiper-slide">
+								<a href="#">
+									<figure><img src="./images/slider/banner_delivery.png" alt="banner_delivery"></figure>
+									<span class="type">
+										<img src="./images/event/stit_store.gif" alt="store">
+									</span>
+									<span class="title">해피오더 딜리버리로 간편하게 주문하세요!</span>
+									<span class="period">상시진행</span>
+								</a>
+							</div>
+							  <div class="swiper-slide">
+								<a href="#">
+									<figure><img src="./images/slider/banner_delivery_bm.png" alt="banner_delivery_bm"></figure>
+									<span class="type">
+										<img src="./images/event/stit_store.gif" alt="store">
+									</span>
+									<span class="title">배달의 민족에서 빠르게 주문하세요!</span>
+									<span class="period">상시진행</span>
+								</a>
+							</div>
+							  <div class="swiper-slide">
+								<a href="#">
+									<img src="./images/slider/banner_delivery_ygy.png" alt="banner_delivery_ygy">
+									<span class="type">
+										<img src="./images/event/stit_store.gif" alt="store">
+									</span>
+									<span class="title">요기요에서 손쉽게 주문하세요!</span>
+									<span class="period">상시진행</span>
+								</a>
+							</div>
+							  <div class="swiper-slide">
+								<a href="#">
+									<img src="./images/slider/banner_delivery_kakao.png" alt="banner_delivery_kakao">
+									<span class="type">
+										<img src="./images/event/stit_store.gif" alt="store">
+									</span>
+									<span class="title">카카오톡 주문하기에서 편리하게 주문하세요!</span>
+									<span class="period">상시진행</span>
+								</a>
+							</div>
+							  <div class="swiper-slide">
+								<a href="#">
+									<img src="./images/slider/1670146074.png" alt="기아 멤버스 최대 50%할인"></figure>
+									<span class="type">
+										<img src="./images/event/stit_store.gif" alt="store">
+									</span>
+									<span class="title">기아 멤버스 최대 50% 제휴 혜택</span>
+									<span class="period">상시진행</span>
+								</a>
+							</div>
+							  <div class="swiper-slide">
+								<a href="#">
+									<img src="./images/slider/1667538956.png" alt="2022베스킨라빈스 특별한 제휴혜택">
+									<span class="type">
+										<img src="./images/event/stit_online.gif" alt="stit_online">
+									</span>
+									<span class="title">2022 배스킨라빈스 특별한 제휴혜택</span>
+									<span class="period">상시진행</span>
+								</a>
+							</div>
+							  <div class="swiper-slide">
+								<a href="#">
+									<img src="./images/slider/1659436130.png" alt="고소한 오트밀크와 깔끔한 콜드브루의 만남, 콜드브루 오트라떼 출시!
+										">
+									<span class="type">
+										<img src="./images/event/stit_store.gif" alt="store">
+									</span>
+									<span class="title">고소한 오트밀크와 깔끔한 콜드브루의 만남, 콜드브루 오트라떼 출시!</span>
+									<span class="period">상시진행</span>
+								</a>
+							</div>
+							  <div class="swiper-slide">
+								<a href="#">
+									<img src="./images/slider/1643869329.png" alt="KT 멤버십 고객이라면 누구나 파인트 30% 할인!">
+									<span class="type">
+										<img src="./images/event/stit_store.gif" alt="store">
+									</span>
+									<span class="title">KT 멤버십 고객이라면 누구나 파인트 30% 할인!</span>
+									<span class="period">상시진행</span>
+								</a>
+							</div>
+							  <div class="swiper-slide">
+								<a href="#">
+									<img src="./images/slider/1667382917.png" alt="현대카드 M포인트 50% 사용">
+									<span class="type">
+										<img src="./images/event/stit_store.gif" alt="store">
+									</span>
+									<span class="title">현대카드 M포인트 50% 사용</span>
+									<span class="period">상시진행</span>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">
+									<img src="./images/slider/1570702843.png" alt="2018 한글날 기념 무료 글꼴 공개! 배스킨라빈스체">
+									<span class="type">
+										<img src="./images/event/stit_online.gif" alt="stit_online">
+									</span>
+									<span class="title">2018 한글날 기념 무료 글꼴 공개! 배스킨라빈스체</span>
+									<span class="period">상시진행</span>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">
+									<img src="./images/slider/1578277305.png" alt="1회용 컵 사용 줄이기 안내">
+									<span class="type">
+										<img src="./images/event/stit_store.gif" alt="store">
+									</span>
+									<span class="title">1회용 컵 사용 줄이기 안내</span>
+									<span class="period">상시진행</span>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#">
+									<img src="./images/slider/banner_praise_2022-3.jpg" alt="2022 3분기 고객 BEST 칭찬점포 안내">
+									<span class="type">
+										<img src="./images/event/stit_store.gif" alt="store">
+									</span>
+									<span class="title">2022 3분기 고객 BEST 칭찬점포 안내</span>
+									<span class="period"></span>
+								</a>
+							</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-pagination"></div>
+						  </div>
+					</div>
+				</div>
+			</section>
+			<section class="br_menu">
+				<h3 class="title">
+					<img src="./images/main/h_menu.png" alt="menu">
+				</h3>
+				<div class="menu_list"></div>
+			</section>
+			<section class="mobile_slider">
+				<h2 class="ir_so">모바일 세로 슬라이더</h2>
+				<div class="container">
+					<h3 class="title">
+						<img src="./images/monthlybesticecream/besticecream.png" alt="besticecream">
+					</h3>
+					<ul class="list">
+						<li class="item">
+							<a href="" class="product icecream">
+								<figure>
+									<figcaption>
+										<span>1위 아이스 허쉬 앤 리세스</span>
+									</figcaption>
+										<span class="img"><img src="./images/monthlybesticecream/hush.png" style="width: 200px; height: 200px;" alt="hush"></span>
+										<span class="corn"><img src="./images/monthlybesticecream/corn.png" alt=""></span>
+								</figure>
+							</a>
+							<div class="hashtag_buy">
+								<div class="hashtag">
+									<ul>
+										<li>
+											<a href="#">#아이스허쉬앤리세스</a>
+										</li>
+										<li>
+											<a href="#">#허쉬초콜릿아이스크림</a>
+										</li>
+									</ul>
+								</div>
+								<div class="buy">
+									<a href="">구매</a>
+								</div>
+							</div>
+						</li>
+						<li class="item">
+							<a href="" class="product icecream">
+								<figure>
+									<figcaption>
+										<span>2위 엄마는 외계인</span>
+									</figcaption>
+									<span class="img"><img src="./images/monthlybesticecream/2.png" style="width: 200px; height: 200px;" alt="hush"></span>
+									<span class="corn"><img src="./images/monthlybesticecream/corn.png" alt=""></span>
+								</figure>
+							</a>
+							<div class="hashtag_buy">
+								<div class="hashtag">
+									<ul>
+										<li>
+											<a href="#">#초콜릿</a>
+										</li>
+										<li>
+											<a href="#">#초코볼</a>
+										</li>
+									</ul>
+								</div>
+								<div class="buy">
+									<a href="">구매</a>
+								</div>
+							</div>
+						</li>
+						<li class="item">
+							<a href="" class="product icecream">
+								<figure>
+									<figcaption>
+										<span>3위 엄마는 외계인</span>
+									</figcaption>
+									<span class="img"><img src="./images/monthlybesticecream/3.png" style="width: 200px; height: 200px;"alt="hush"></span>
+									<span class="corn"><img src="./images/monthlybesticecream/corn.png" alt=""></span>
+								</figure>
+							</a>
+							<div class="hashtag_buy">
+								<div class="hashtag">
+									<ul>
+										<li>
+											<a href="#">#아이스허쉬앤리세스</a>
+										</li>
+										<li>
+											<a href="#">#허쉬초콜릿아이스크림</a>
+										</li>
+									</ul>
+								</div>
+								<div class="buy">
+									<a href="">구매</a>
+								</div>
+							</div>
+						</li>
+					</ul>	
+					<ul class="list">
+						<li class="item">
+							<a href="" class="product icecream">
+								<figure>
+									<figcaption>
+										<span>4위 아이스 허쉬 앤 리세스</span>
+									</figcaption>
+									<span class="img"><img src="./images/monthlybesticecream/4.png" style="width: 200px; height: 200px;"alt="hush"></span>
+									<span class="corn"><img src="./images/monthlybesticecream/corn.png" alt=""></span>
+								</figure>
+							</a>
+							<div class="hashtag_buy">
+								<div class="hashtag">
+									<ul>
+										<li>
+											<a href="#">#아이스허쉬앤리세스</a>
+										</li>
+										<li>
+											<a href="#">#허쉬초콜릿아이스크림</a>
+										</li>
+									</ul>
+								</div>
+								<div class="buy">
+									<a href="">구매</a>
+								</div>
+							</div>
+						</li>
+						<li class="item">
+							<a href="" class="product icecream">
+								<figure>
+									<figcaption>
+										<span>5위 아이스 허쉬 앤 리세스</span>
+									</figcaption>
+									<span class="img"><img src="./images/monthlybesticecream/5.png" style="width: 200px; height: 200px;"alt="hush"></span>
+									<span class="corn"><img src="./images/monthlybesticecream/corn.png" alt=""></span>
+								</figure>
+							</a>
+							<div class="hashtag_buy">
+								<div class="hashtag">
+									<ul>
+										<li>
+											<a href="#">#아이스허쉬앤리세스</a>
+										</li>
+										<li>
+											<a href="#">#허쉬초콜릿아이스크림</a>
+										</li>
+									</ul>
+								</div>
+								<div class="buy">
+									<a href="">구매</a>
+								</div>
+							</div>
+						</li>	
+						<li class="item">
+							<a href="" class="product icecream">
+								<figure>
+									<figcaption>
+										<span>6위 아이스 허쉬 앤 리세스</span>
+									</figcaption>
+									<span class="img"><img src="./images/monthlybesticecream/6.png" style="width: 200px; height: 200px;"alt="hush"></span>
+									<span class="corn"><img src="./images/monthlybesticecream/corn.png" alt=""></span>
+								</figure>
+							</a>
+							<div class="hashtag_buy">
+								<div class="hashtag">
+									<ul>
+										<li>
+											<a href="#">#아이스허쉬앤리세스</a>
+										</li>
+										<li>
+											<a href="#">#허쉬초콜릿아이스크림</a>
+										</li>
+									</ul>
+								</div>
+								<div class="buy">
+									<a href="">구매</a>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<ul class="list last">
+						<li class="item">
+							<a href="" class="product icecream">
+								<figure>
+									<figcaption>
+										<span>7위 아이스 허쉬 앤 리세스</span>
+									</figcaption>
+									<span class="img"><img src="./images/monthlybesticecream/7.png"style="width: 200px; height: 200px;" alt="hush"></span>
+									<span class="corn"><img src="./images/monthlybesticecream/corn.png" alt=""></span>
+								</figure>
+							</a>
+							<div class="hashtag_buy">
+								<div class="hashtag">
+									<ul>
+										<li>
+											<a href="#">#아이스허쉬앤리세스</a>
+										</li>
+										<li>
+											<a href="#">#허쉬초콜릿아이스크림</a>
+										</li>
+									</ul>
+								</div>
+								<div class="buy">
+									<a href="">구매</a>
+								</div>
+							</div>
+						</li>
+						<li class="item">
+							<a href="" class="product icecream">
+								<figure>
+									<figcaption>
+										<span>8위 아이스 허쉬 앤 리세스</span>
+									</figcaption>
+									<span class="img"><img src="./images/monthlybesticecream/8.png" style="width: 200px; height: 200px;"alt="hush"></span>
+									<span class="corn"><img src="./images/monthlybesticecream/corn.png" alt=""></span>
+								</figure>
+							</a>
+							<div class="hashtag_buy">
+								<div class="hashtag">
+									<ul>
+										<li>
+											<a href="#">#아이스허쉬앤리세스</a>
+										</li>
+										<li>
+											<a href="#">#허쉬초콜릿아이스크림</a>
+										</li>
+									</ul>
+								</div>
+								<div class="buy">
+									<a href="">구매</a>
+								</div>
+							</div>
+						</li>
+						<li class="item">
+							<a href="" class="product icecream">
+								<figure>
+									<figcaption>
+										<span>9위 아이스 허쉬 앤 리세스</span>
+									</figcaption>
+									<span class="img"><img src="./images/monthlybesticecream/9.png"style="width: 200px; height: 200px;" alt="hush"></span>
+									<span class="corn"><img src="./images/monthlybesticecream/corn.png" alt=""></span>
+								</figure>
+							</a>
+							<div class="hashtag_buy">
+								<div class="hashtag">
+									<ul>
+										<li>
+											<a href="#">#아이스허쉬앤리세스</a>
+										</li>
+										<li>
+											<a href="#">#허쉬초콜릿아이스크림</a>
+										</li>
+									</ul>
+								</div>
+								<div class="buy">
+									<a href="">구매</a>
+								</div>
+							</div>
+						</li>
+					</ul>	
+					<!-- <div class="swiper mySwiper list monthly">
+						<div class="swiper-wrapper ">
+						  <div class="swiper-slide monthlyslide"><li class="item">
+							<a href="" class="product icecream">
+								<figure>
+									<figcaption>
+										<span>1위 아이스 허쉬 앤 리세스</span>
+									</figcaption>
+									<span class="img"><img src="./images/monthlybesticecream/hush.png" alt="hush"></span>
+								</figure>
+							</a>
+							<div class="hashtag_buy">
+								<div class="hashtag">
+									<ul>
+										<li>
+											<a href="#">#아이스허쉬앤리세스</a>
+										</li>
+										<li>
+											<a href="#">#허쉬초콜릿아이스크림</a>
+										</li>
+									</ul>
+								</div>
+								<div class="buy">
+									<a href="">구매</a>
+								</div>
+							</div>
+						</li></div>
+						  <div class="swiper-slide monthlyslide"><li class="item">
+							<a href="" class="product icecream">
+								<figure>
+									<figcaption>
+										<span>2위 엄마는 외계인</span>
+									</figcaption>
+									<span class="img"><img src="./images/monthlybesticecream/2.png" alt="hush"></span>
+								</figure>
+							</a>
+							<div class="hashtag_buy">
+								<div class="hashtag">
+									<ul>
+										<li>
+											<a href="#">#초콜릿</a>
+										</li>
+										<li>
+											<a href="#">#초코볼</a>
+										</li>
+									</ul>
+								</div>
+								<div class="buy">
+									<a href="">구매</a>
+								</div>
+							</div>
+						</li></div>
+						  <div class="swiper-slide monthlyslide"><li class="item">
+							<a href="" class="product icecream">
+								<figure>
+									<figcaption>
+										<span>3위 엄마는 외계인</span>
+									</figcaption>
+									<span class="img"><img src="./images/monthlybesticecream/3.png" alt="hush"></span>
+								</figure>
+							</a>
+							<div class="hashtag_buy">
+								<div class="hashtag">
+									<ul>
+										<li>
+											<a href="#">#아이스허쉬앤리세스</a>
+										</li>
+										<li>
+											<a href="#">#허쉬초콜릿아이스크림</a>
+										</li>
+									</ul>
+								</div>
+								<div class="buy">
+									<a href="">구매</a>
+								</div>
+							</div>
+						</li></div>
+						  <div class="swiper-slide monthlyslide"><li class="item">
+							<a href="" class="product icecream">
+								<figure>
+									<figcaption>
+										<span>4위 아이스 허쉬 앤 리세스</span>
+									</figcaption>
+									<span class="img"><img src="./images/monthlybesticecream/4.png" alt="hush"></span>
+								</figure>
+							</a>
+							<div class="hashtag_buy">
+								<div class="hashtag">
+									<ul>
+										<li>
+											<a href="#">#아이스허쉬앤리세스</a>
+										</li>
+										<li>
+											<a href="#">#허쉬초콜릿아이스크림</a>
+										</li>
+									</ul>
+								</div>
+								<div class="buy">
+									<a href="">구매</a>
+								</div>
+							</div>
+						</li></div>
+						  <div class="swiper-slide monthlyslide"><li class="item">
+							<a href="" class="product icecream">
+								<figure>
+									<figcaption>
+										<span>5위 아이스 허쉬 앤 리세스</span>
+									</figcaption>
+									<span class="img"><img src="./images/monthlybesticecream/5.png" alt="hush"></span>
+								</figure>
+							</a>
+							<div class="hashtag_buy">
+								<div class="hashtag">
+									<ul>
+										<li>
+											<a href="#">#아이스허쉬앤리세스</a>
+										</li>
+										<li>
+											<a href="#">#허쉬초콜릿아이스크림</a>
+										</li>
+									</ul>
+								</div>
+								<div class="buy">
+									<a href="">구매</a>
+								</div>
+							</div>
+						</li></div>
+						  <div class="swiper-slide monthlyslide"><li class="item">
+							<a href="" class="product icecream">
+								<figure>
+									<figcaption>
+										<span>6위 아이스 허쉬 앤 리세스</span>
+									</figcaption>
+									<span class="img"><img src="./images/monthlybesticecream/6.png" alt="hush"></span>
+								</figure>
+							</a>
+							<div class="hashtag_buy">
+								<div class="hashtag">
+									<ul>
+										<li>
+											<a href="#">#아이스허쉬앤리세스</a>
+										</li>
+										<li>
+											<a href="#">#허쉬초콜릿아이스크림</a>
+										</li>
+									</ul>
+								</div>
+								<div class="buy">
+									<a href="">구매</a>
+								</div>
+							</div>
+						</li></div>
+						  <div class="swiper-slide monthlyslide"><li class="item">
+							<a href="" class="product icecream">
+								<figure>
+									<figcaption>
+										<span>7위 아이스 허쉬 앤 리세스</span>
+									</figcaption>
+									<span class="img"><img src="./images/monthlybesticecream/7.png" alt="hush"></span>
+								</figure>
+							</a>
+							<div class="hashtag_buy">
+								<div class="hashtag">
+									<ul>
+										<li>
+											<a href="#">#아이스허쉬앤리세스</a>
+										</li>
+										<li>
+											<a href="#">#허쉬초콜릿아이스크림</a>
+										</li>
+									</ul>
+								</div>
+								<div class="buy">
+									<a href="">구매</a>
+								</div>
+							</div>
+						</li></div>
+						  <div class="swiper-slide monthlyslide"><li class="item">
+							<a href="" class="product icecream">
+								<figure>
+									<figcaption>
+										<span>8위 아이스 허쉬 앤 리세스</span>
+									</figcaption>
+									<span class="img"><img src="./images/monthlybesticecream/8.png" alt="hush"></span>
+								</figure>
+							</a>
+							<div class="hashtag_buy">
+								<div class="hashtag">
+									<ul>
+										<li>
+											<a href="#">#아이스허쉬앤리세스</a>
+										</li>
+										<li>
+											<a href="#">#허쉬초콜릿아이스크림</a>
+										</li>
+									</ul>
+								</div>
+								<div class="buy">
+									<a href="">구매</a>
+								</div>
+							</div>
+						</li></div>
+						  <div class="swiper-slide monthlyslide"><li class="item">
+							<a href="" class="product icecream">
+								<figure>
+									<figcaption>
+										<span>9위 아이스 허쉬 앤 리세스</span>
+									</figcaption>
+									<span class="img"><img src="./images/monthlybesticecream/9.png" alt="hush"></span>
+								</figure>
+							</a>
+							<div class="hashtag_buy">
+								<div class="hashtag">
+									<ul>
+										<li>
+											<a href="#">#아이스허쉬앤리세스</a>
+										</li>
+										<li>
+											<a href="#">#허쉬초콜릿아이스크림</a>
+										</li>
+									</ul>
+								</div>
+								<div class="buy">
+									<a href="">구매</a>
+								</div>
+							</div>
+						</li></div>
+						  <div class="swiper-slide monthlyslide">
+							<li class="item">
+								<a href="" class="product icecream">
+									<figure>
+										<figcaption>
+											<span>10위 아이스 허쉬 앤 리세스</span>
+										</figcaption>
+										<span class="img"><img src="./images/monthlybesticecream/10.png" alt="hush"></span>
+									</figure>
+								</a>
+								<div class="hashtag_buy">
+									<div class="hashtag">
+										<ul>
+											<li>
+												<a href="#">#아이스허쉬앤리세스</a>
+											</li>
+											<li>
+												<a href="#">#허쉬초콜릿아이스크림</a>
+											</li>
+										</ul>
+									</div>
+									<div class="buy">
+										<a href="">구매</a>
+									</div>
+								</div>
+							</li>
+						  </div>
+						</div>
+						<div class="swiper-pagination"></div>
+					  </div> -->
+				</div>
+			</section>
+	</article>
+</article>
+</body>
+</html>

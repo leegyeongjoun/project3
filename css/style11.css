@@ -1,0 +1,33 @@
+*{margin: 0; padding: 0}
+ul{list-style: none}
+a{text-decoration: none; color: #222}
+.hidden{display: block; overflow: hidden; width: 0; height: 0; line-height: 0; text-indent: -99999em;}
+
+/* 감싸고 있는친구들에게 overflow hidden을 줘야 나오지 않는다 */
+.slide{width: 100%; height: 697px; position: relative; top: 0; left: 0; overflow: hidden;}
+/* 안에 li를 곂치려고하기떄문에 */
+.slide .slideUl{position: relative; width: 100%; height: 100%; top: 0; left: 0;}
+.slide .slideUl li{position: absolute; width: 100%; height: 100%; top: 0; left: 0;}
+.slide .slideUl li a{display: block; width: 100%; height: 100%;}
+.slide .slideUl .slide01{background: url(../images/main/1718097560.jpg) no-repeat 50% 0; background-color:#eb5717;}
+.slide .slideUl .slide02{background: url(../images/main/1657600885.jpg) no-repeat 50% 0; left: 100%; background-color:#eb5717;}
+.slide .slideUl .slide03{background: url(../images/main/1657589306.jpg) no-repeat 50% 0; left: 200%; background-color:#ed1d2b}
+.slide .slideUl .slide04{background: url(../images/main/1678606087.jpeg) no-repeat 50% 0; left: 300%; background-color:#1d5973;}
+.slide .slideUl .slide05{background: url(../images/main/1676003546.jpg) no-repeat 50% 0; left: 400%; background-color:#613AAF}
+.slide .slideUl .slide06{background: url(../images/main/1670146295.png) no-repeat 50% 0; left: 500%; background-color:#E5E5E5}
+.slide .slideUl .slide07{background: url(../images/main/1667539209.png) no-repeat 50% 0; left: 600%; background-color:#F16C83}
+.slide .slideUl .slide08{background: url(../images/main/1667440402.png) no-repeat 50% 0; left: 700%;  background-color:#F6F8F8}
+.slide .slideUl .slide09{background: url(../images/main/1667383155.png) no-repeat 50% 0; left: 800%; background-color:#ffe103}
+.slide .slideUl .slide10{background: url(../images/main/1643869369.png) no-repeat 50% 0; left: 900%; background-color:#F16C83}
+
+
+/* 넓이를 100%로 잡아줘야 prev와 next를 absoulue시켜셔 위치를 옮겨 줄 수있음 */
+.slide .arrowBtn{position: absolute; top: 50%; transform: translateY(-50%); width: 100%;}
+.slide .arrowBtn .prev{position: absolute; top: -30px; left: 6px; cursor: pointer;}
+.slide .arrowBtn .next{position: absolute; top: -30px; right: 6px; cursor: pointer;}
+
+.slide .pagerBtn{position: absolute; bottom: 18px; /* width: 100%; */  left: 50%; transform: translateX(-50%); cursor: pointer;}
+
+.slide .pagerBtn li{width: 15px; height: 15px; border-radius: 50%; background: white; margin: 0 5px; float: left;}
+.slide .pagerBtn .on{background: #ff7c98;}
+.slide .pagerBtn li a{display: block;}

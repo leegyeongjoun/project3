@@ -1,0 +1,483 @@
+@charset "utf-8";
+@import url('./reset.css');
+/* *{box-sizing: border-box;} */
+/* html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    }
+     */
+body{
+    color: #483834;
+    font-size: 13px;
+    font-family: "Nanum Barun Gothic", "나눔고딕", "NanumGothic", "돋움", "Dotum", sans-serif;
+    line-height: 1.5;
+    letter-spacing: -.05em;
+    box-sizing: border-box;
+}
+
+/* 공통속성 */
+/* 레이아웃 */
+.mobile_header{display: none;}
+.happyPoint{display: none;}
+#heaer{width: 100%; height: 186px;}
+.menu_area{width: 100%; height: 46px;}
+#slick_banner{width: 100%; height: auto;  /* background: #eb5717; */ }
+.br_event{width: 100%; height: 642px;}
+#mobile_banner{display: none;}
+.mobile_slider{display: none;}
+
+/* 헤더부분 */
+article{display: block;}
+#header{ border-top: 3px solid #ff7c98; background: url(../images/common/bg_header.gif) 50% 0 repeat-x; border-bottom: 1px solid #3f291a; z-index: 99999;}
+#header .top_area{border-bottom: 1px solid #e2d9d6;}
+#header .top_area .container{position: relative; width: 1200px; height: 114px; padding-top: 21px; margin: 0 auto;/*  background: rgba(0,0,0,.3); */ }
+
+/* 로고부분 */
+#header .logo{width: 92px; height: 92px; margin: 0 auto}
+#header .logo a{display: block; width: 100%; height: 100%; background: url(../images/common/logo_baskinrobbins.png) no-repeat; transition: .2s;}
+#header .logo:hover a{transform: scale(1.3);}
+/* 헤더 왼쪽 부분 */
+#header .sns{position: absolute; top: 50px; left: 0;}
+#header .sns ul{display: flex; justify-content: space-between; align-items: center;}
+#header .sns ul li{padding-right: 10px;}
+#header .sns ul li a img{transition: .2s;}
+#header .sns ul li a:hover img{transform: scale(1.2)}
+/* 헤더 오른쪽 부분 */
+#header .etc{position: absolute; top: 39px; right: 0; height: 54px; line-height: 54px;}
+#header .etc ul{display: flex;}
+#header .etc ul li{padding-left: 20px; font-size: 11px; font-weight: bold;}
+#header .etc ul li:hover a{color:#ff7c98;}
+#header .etc ul li.search{padding-left: 26px;}
+#header .etc ul .search a{display: inline-block; width: 54px; height: 54px; background: url(../images/common/icon_search.png) no-repeat; text-indent: -9999em; transition: .2s;}
+#header .etc ul .search:hover a{transform: scale(1.2);}
+
+/* nav부분 */
+.menu_area .container{width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; /* background: rgba(0,0,0,.3); */}
+.menu_area .container .member{display: flex;}
+.menu_area .container .member ul{display: flex; font-weight: bold;}
+.menu_area .container .member ul li{flex-basis: 16.6667%;}
+.menu_area .container .member ul > li > a {padding: 0 23px; color: #483834;}
+.menu_area .container .member ul > li > a >  span{height: 46px; line-height: 46px; }
+.menu_area .container .member ul > li > a:hover >  span{color:#ff7c98;}
+.menu_area .container .member ul > .login > a {padding-left: 0; margin: 20px;}
+.menu_area .container .member ul > .login > a > span{width: 35px; color:#ff7c98;}
+.menu_area .container .member ul > .join > a {padding-left: 0; margin-left: 40px;}
+.menu_area .container .member ul > .join > a > span{width: 27px;}
+
+/* nav 공통속성 */
+#gnb{display: flex;}
+#gnb .gnb_wrap > ul{display: flex; font-weight: bold;}
+#gnb .gnb_wrap > ul > li{position: relative;}
+#gnb .gnb_wrap > ul > li > a{color: #483834}
+#gnb .gnb_wrap > ul > li > .gnb_main a{display: block; padding: 0 46px;}
+#gnb .gnb_wrap > ul > li > .gnb_main span{display: block; height: 46px; line-height: 46px;}
+#gnb .gnb_wrap > ul > li > .gnb_main:hover span{color:#ff7c98; font-weight: bold;}
+#gnb .gnb_sub{overflow: hidden; position: absolute;  top: 100%; left: 0; height: 0; z-index: 1000; font-size: 14px; font-weight: 300; text-align: center; transition: height .5s ease}
+#gnb .gnb_sub a{display: block; color: #7b7b7b; list-style: 1.2; opacity: 0; text-transform: uppercase; transition: opacity .3s linear;}
+#gnb .gnb_sub li:first-child {padding-top: 40px;}
+#gnb .gnb_sub li {padding-bottom: 12px;}
+
+
+/* flavor의 nav */
+#gnb .gnb_flavor{position: relative;}
+#gnb .gnb_flavor .gnb_main span{width: 148px;}
+#gnb .gnb_flavor .gnb_sub{padding-top: 2px; opacity: 0; transition: opacity .3s ease;}
+#gnb .gnb_flavor .gnb_sub a{padding: 0;}
+#gnb .gnb_flavor .gnb_sub a img{position: absolute; top: 0; left: -6px;}
+
+/* menu */
+#gnb .gnb_menu .gnb_main span{width: 42px;}
+#gnb .gnb_menu .gnb_sub {margin-left: 21px;}
+
+/* nutrition */
+#gnb .gnb_nutrition .gnb_main span {width: 129px;}
+#gnb .gnb_wrap > ul .gnb_nutrition .gnb_main a {padding: 0 27.5px;}
+#gnb .gnb_nutrition .gnb_sub {margin-left: 64px;}
+
+/* event */
+#gnb .gnb_event .gnb_main span {width: 42px;}
+#gnb .gnb_event .gnb_sub {margin-left: 25px;}
+
+/* store */
+#gnb .gnb_store .gnb_main span {width: 49px;}
+#gnb .gnb_store .gnb_sub {margin-left: 39px;}
+
+/* about */
+#gnb .gnb_about .gnb_main span {width: 49px;}
+#gnb .gnb_about .gnb_sub {padding-left: 29px;}
+
+#gnb .gnb_bg{overflow: hidden; position: absolute; top: 185px; left: 0; height: 0; z-index: 999; min-width: 100%;
+border-bottom: 1px solid #693337; background: #fff;
+transition: height .5s ease;}
+#gnb .gnb_bg div{width: 1200px; height: 204px; margin: 0 auto; background: url(../images/common/img_happypoint_app.jpg) no-repeat 0 65px;}
+
+
+/* 2depth */
+#gnb:hover .gnb_sub,#gnb:hover .gnb_bg {height:273px;}
+#gnb:hover .gnb_bg {margin-top:1px;}
+/* 이달의 맛 메뉴 */
+#gnb:hover .gnb_sub {overflow:visible;}
+/* 메뉴들 */
+#gnb:hover .gnb_sub a {color:#948780; opacity:1; -webkit-transition:opacity .5s linear; transition :opacity .5s linear;}
+#gnb:hover .gnb_sub a:hover {color:#ff75ac;}
+#gnb:hover .gnb_flavor .gnb_sub {margin-left:-44px; opacity:1; -webkit-transition-delay:.3s; transition-delay:.3s;} 
+
+
+
+/*////////////////////////////////////////////////// 메뉴 밑에 이달의 맛 */
+/* #br_main .flavor_month .flavor_banner {position: absolute; top: 0; left: 0; width: 100%; z-index: 10;} */
+#br_main .flavor_month .top a img{ width: 100%;}
+
+/*////////////////////////////////////////////////////// 배너 슬라이드 */
+#slick_banner .container{width: 100%; margin: 0 auto; height: inherit;}
+
+.bx-wrapper{-webkit-box-shadow:none; box-shadow: none; border: none; margin-bottom: 0;}
+
+/* 밑에 버튼의 위치를 바꾸기 위해 */
+.bx-wrapper .bx-pager {bottom: 10px;}
+
+.bx-wrapper .bx-pager.bx-default-pager a {background: #fff;}
+
+.hidden{display: block; overflow: hidden; width: 0; height: 0; line-height: 0; text-indent: -99999em;}
+
+#wrap{max-width: 100%;}
+/* 감싸고 있는친구들에게 overflow hidden을 줘야 나오지 않는다 */
+.slide{width: 100%; height: 697px; position: relative; top: 0; left: 0; overflow: hidden;}
+/* 안에 li를 곂치려고하기떄문에 */
+.slide .slideUl{position: relative; width: 100%; height: 100%; top: 0; left: 0;}
+.slide .slideUl li{position: absolute; width: 100%; height: 100%; top: 0; left: 0;}
+.slide .slideUl li a{display: block; width: 100%; height: 100%;}
+.slide .slideUl .slide01{background: url(../images/main/1718097560.jpg) no-repeat 50% 0;             background-color:#eb5717;}
+.slide .slideUl .slide02{background: url(../images/main/1657600885.jpg) no-repeat 50% 0; left: 100%; background-color:#eb5717;}
+.slide .slideUl .slide03{background: url(../images/main/1657589306.jpg) no-repeat 50% 0; left: 200%; background-color:#ed1d2b}
+.slide .slideUl .slide04{background: url(../images/main/1678606087.jpeg) no-repeat 50% 0; left: 300%; background-color:#1d5973;}
+.slide .slideUl .slide05{background: url(../images/main/1676003546.jpg) no-repeat 50% 0; left: 400%; background-color:#613AAF}
+.slide .slideUl .slide06{background: url(../images/main/1670146295.png) no-repeat 50% 0; left: 500%; background-color:#E5E5E5}
+.slide .slideUl .slide07{background: url(../images/main/1667539209.png) no-repeat 50% 0; left: 600%; background-color:#F16C83}
+.slide .slideUl .slide08{background: url(../images/main/1667440402.png) no-repeat 50% 0; left: 700%;  background-color:#F6F8F8}
+.slide .slideUl .slide09{background: url(../images/main/1667383155.png) no-repeat 50% 0; left: 800%; background-color:#ffe103}
+.slide .slideUl .slide10{background: url(../images/main/1643869369.png) no-repeat 50% 0; left: 900%; background-color:#fb637e}
+
+
+/* 넓이를 100%로 잡아줘야 prev와 next를 absoulue시켜셔 위치를 옮겨 줄 수있음 */
+.slide .arrowBtn{position: absolute; top: 50%; transform: translateY(-50%); width: 100%;}
+.slide .arrowBtn .prev{position: absolute; top: -30px; left: 6px; cursor: pointer;}
+.slide .arrowBtn .next{position: absolute; top: -30px; right: 6px; cursor: pointer;}
+
+.slide .pagerBtn{position: absolute; bottom: 18px; /* width: 100%; */  left: 50%; transform: translateX(-50%); cursor: pointer;}
+
+.slide .pagerBtn li{width: 15px; height: 15px; border-radius: 50%; background: white; margin: 0 4px; float: left;}
+.slide .pagerBtn .on{background: #ff7c98;}
+.slide .pagerBtn li a{display: block;}
+
+
+
+/*버튼 이미지 바꾸려면 */
+/* .bx-wrapper .bx-next {right: 10px; background: url(../images/main/btn_banner_next.png) no-repeat left top/50%}
+.bx-wrapper .bx-prev {right: 10px; background: url(../images/main/btn_banner_prev.png) no-repeat left top/50%} */
+
+/* hover 됐을 때 색깔을 바꾸기위해 */
+.bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus, .bx-wrapper .bx-pager.bx-default-pager a:hover {
+    background: #ff75ac;
+}
+
+/* ////////////////////////////////////////////////event */
+.br_event .container{width: 1200px; height: auto; margin: 0 auto; /* background: rgba(0,0,0,.7); */}
+.br_event .container >.title{color: #2f231c; font-size: 17px;line-height: 23px; padding: 50px 0 50px; text-align: center;}
+
+/*///////////////////////////////////////////////// swiper111111111 */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    /* font-size: 18px; */
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide > figure > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* 내용부분 */
+  .br_event .container .event_list .swiper .swiper-slide a span{display: block;}
+  .br_event .container .event_list .swiper .swiper-slide a span.title{ color: #2f231c; font-size: 17px; line-height: 23px;}
+  .br_event .container .event_list .swiper .swiper-slide a >span.period{margin: 11px 0; font-weight: 300; font-size: 13px; color: #948780; margin-bottom: 50px;}
+
+  /*좌우 버튼 색 바꾸기 */
+  .swiper-button-prev, .swiper-button-next {position: absolute;top: 33%;color: #ff75ac;;}
+  /* 동그라미 버튼색과 위치 이동하기 */
+  .swiper-pagination-bullet-active {background: #ff75ac;;}
+  .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {bottom: 1px;}
+  
+
+  /* swiper2222222222222222222222222222222222222222222 */
+  .mobile  {
+    width: 100%;
+    height: 100%;
+  }
+
+  .mobile-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .mobile-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* ----------------------------------------------menu------------------------------- */
+.br_menu{position: relative; height: 1157px; background: url(../images/main/bg_menu.jpg) 50% 0 no-repeat;}
+.br_menu .title{padding-top: 78px; text-align: center;}
+.br_menu .menu_list{height: 1066px; background: url(../images/main/img_menu_list_221130.png) 50% 0 no-repeat; margin-top: 50px;
+position: relative; width: 1200px; margin: 0 auto;}
+
+/* ---------------------------------세로 모바일 배너----------------------------- */
+.mobile_slider .container .title{text-align: center; padding: 20px; box-sizing: border-box;}
+.list{ margin-top: 0; display: flex;  width: 100%; justify-content: center;}
+.list .item{position: relative;  flex-basis: 10%; text-align: center; box-sizing: border-box; overflow: hidden; flex-basis: 33.333%;}
+.list .product{display: block; height: 303px;}
+.list .product figure{font-size: 12px;}
+.list .product figure figcaption{height: 56px; line-height: 1.2; font-weight: bold;}
+.list .product figure figcaption span{position: relative; top: 0; left: -11px;}
+.ice{position: relative;}
+.list .product figure .img{display: block;
+    position: relative;
+    top: -39px;
+    left: -20px;
+    text-align: center; z-index: 1;}
+.list .product figure .corn{/* background: url(../images/monthlybesticecream/corn.png) no-repeat center center; */ display: block;  position: relative; bottom: 107px; left: -18px;}
+    
+.list .item .hashtag_buy{ position: absolute; width: 100%; top: 16px; left: -13px; font-size: 11px;}
+.list .item .hashtag_buy .hashtag ul{display: flex; flex-direction: column;}
+.list .item .hashtag_buy .hashtag ul li{display: inline-block; flex-basis: 20%;}
+.list .item .hashtag_buy .hashtag ul li{display: inline-block; flex-basis: 20%;}
+.list .item .hashtag_buy .hashtag ul li a{color: #9d9d9d; font-weight: 300}
+.list .item .hashtag_buy .buy a{margin-right: 5px; margin-top: 5px; display: inline-block;
+    width: 107px;
+    height: 32px;
+    border-radius: 10px;
+    background-color: #d3c1ab;
+    color: #fff;
+    font-size: 11px;
+    text-align: center;
+    line-height: 35px;
+    position: relative;
+    bottom: -207px;
+    left: 0px;
+}
+
+.monthly {
+    width: 100%;
+    height: 100%;
+  }
+
+  .monthlyslide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .monthlyslide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+@media screen and (max-width:1350px){
+    #slick_banner{display: none;}
+    #mobile_banner{display: block;}
+}
+@media screen and (max-width:1200px){
+    .br_menu .menu_list{width: 100%;}
+    .br_event .container{width: 100%;}
+    #content{width: 100%;}
+    #slick_banner .container{width: 100%;}
+    /* .br_event .container{width: 100%;} */
+    #header .top_area .container{width: 100%;}
+    /* 화면을 줄일 때 아이콘이 딱 붙는걸 방지하기 위해 패딩을 줌 */
+    #header .etc ul li{margin-left: 18px; font-size: 15px; }
+    #header .etc ul li:last-child{margin-right: 30px; }
+    #header .sns{margin-left: 15px; width: 54px; height: 54px;}
+
+    #gnb{display: block;}
+    .menu_area .container{position: relative; display: block; width: 100%;}
+    #gnb .gnb_wrap > ul {display: flex; font-weight: bold;
+    justify-content: space-between;}
+    .menu_area .container .member ul > li > a >  span{font-size: 15px;}
+   .menu_area .container .member ul > .login > a {position: absolute; top: -112px; left: 246px;}
+   .menu_area .container .member ul > .login > a:hover span{color: rgb(2, 29, 104);}
+    .menu_area .container .member ul > .join > a {position: absolute; top: -92px; left: 306px; color: rgb(2, 29, 104);}
+
+    #gnb .gnb_bg{position: absolute; top: 46px;}
+    #gnb .gnb_bg div{display: none;}
+
+    .happyPoint{display: block; position: absolute; top: 10px; right: 370px;}
+
+}   
+
+
+@media screen and (max-width:1150px){
+ 
+    .br_event .container{width: 100%;}
+    #gnb .gnb_flavor .gnb_sub{padding-top: 2px; opacity: 0; transition: opacity .3s ease;}
+    #gnb .gnb_flavor .gnb_sub a{padding: 0;}
+    #gnb .gnb_flavor .gnb_sub a img{position: absolute; top: 0; left: -6px;}
+
+}   
+
+@media screen and (max-width:950px){
+    .br_event .container{width: 100%;}
+    #header .etc ul{display: flex; flex-direction: column; position: relative; top: -40px; padding-right: 30px; text-align: center;}
+    #header .etc ul li{margin-bottom: 5px;}
+    #header .etc ul .customer{height: 20px;}
+    #header .etc ul .contact{height: 40px;}
+    #header .etc ul .search{position: absolute; top: 70px; left: 10px;}
+    .menu_area .container .member ul > .login > a {position: absolute; top: -70px; left: 40px;}
+   .menu_area .container .member ul > .login > a:hover span{color: rgb(2, 29, 104);}
+    .menu_area .container .member ul > .join > a {position: absolute; top: -50px; left: 100px; color: rgb(2, 29, 104);}
+
+
+    .happyPoint{display: block; position: absolute; top: 50px; right: 590px;}
+
+    #gnb .gnb_wrap > ul {display: flex;}
+    #gnb .gnb_wrap > ul > li:first-child{display: none}
+    #gnb .gnb_wrap > ul > li:nth-child(2){display: none}
+
+    .br_menu{display: none;}
+    .mobile_slider{display: block;}
+    .br_event {height: 570px;}
+}
+
+@media screen and (max-width:900px){
+    .br_event .container{width: 100%;}
+    .happyPoint{display: block; position: absolute; top: 90px; right: 590px;background-position: fixed;}
+}
+
+@media screen and (max-width:900px){
+    .br_event .container{width: 100%;}
+    .happyPoint{display: none;}
+}
+
+
+
+@media screen and (max-width:720px){
+    .br_event .container{width: 100%;}
+    #header .top_area .container{width: 100%;}
+    #header{ border-top: none; background: #ff75ac; border-bottom: 1px solid rgb(2, 29, 104); ; height: 135px; box-sizing: border-box;}
+    .menu_area .container{width: 100%;}
+    .header_inner{display: none;}
+    .mobile_header{display: block; width: 100%;}
+    .mobile_header ul{display: flex; height: 60px; align-items: center; justify-content: space-between;}
+    .mobile_header > ul > li:first-child{width: 26px; height: 16px;}
+    .mobile_header > ul > li:first-child .app-btn{width: 26px; height: 16px; display: block; position: relative; margin-left: 15px;}
+
+    .menu_area{width: 100%; height: 15px;}
+
+    /* 삼선 만들기 */
+    .mobile_header ul li .app-btn .bar{width: 100%; height: 2px; background: white; display: block; position: absolute; transition: .3s; top: 0; left: 0; }
+    .mobile_header ul li .app-btn .bar1{top: 0;}
+    .mobile_header ul li .app-btn .bar1.add{top: 50%; transform: rotate(45deg); margin-top: 1px;}
+    /* 정가운데 보내기 위해 */
+    .mobile_header ul li .app-btn .bar2{top: 50%;}
+    .mobile_header ul li .app-btn .bar2.add{opacity: 0;}
+    .mobile_header ul li .app-btn .bar3{top: 100%;}
+    .mobile_header ul li .app-btn .bar3.add{top: 50%; transform: rotate(-45deg); margin-top: 1px;}
+
+    .mobile_header ul li .mobile-nav{display: none; position: absolute; top: 120px; width: 100%; left:0px; height: 300px; z-index: 999999;}
+    /* 앱솔루트하면 넓이가 안 잡히기 떄문에 */
+    /* 스크롤바가 생기지 않으려면 left = 0을 줘야함 */
+    .mobile_header ul li .mobile-nav li{height: 50px; border-bottom: 1px solid  rgb(2, 29, 104);; background: #ff75ac;text-align: center; }
+    /* 모바일 메뉴 글자들 */
+    .mobile_header ul li .mobile-nav li a{color: #ebebeb; line-height: 50px; font-weight: bold;}
+    .mobile_header ul li .mobile-nav li a:hover{color:  rgb(2, 29, 104);}
+    /* 모바일메뉴 sns */
+    .mobile_header ul li .mobile-nav li a img{width: 30px; margin-top: 10px; transition: .3s;}
+    .mobile_header ul li .mobile-nav li a:hover img{transform: scale(1.2);}
+    .mobile_header ul li .mobile-logo img{margin-top: 32px; margin-left: 30px;}
+    .mobile_header ul li .mobile-find-btn img{margin-right: 15px; margin-top: 15px}
+
+    .menu_area .container .member ul > .login > a > span {position: absolute; top: 0px; left: -40px; color: white}
+    .menu_area .container .member ul > .join > a {position: absolute; top: -50px; left: 40px; color: white;}
+    .menu_area .container .member ul > li > a:hover > span{color: rgb(2, 29, 104);;}
+
+    /* 이달의맛 메뉴 지우기 */
+    #br_main .flavor_month .top a img{display: none;}
+
+    .br_event .container >.title{padding: 30px 0 30px;}
+    .br_event .container .event_list .swiper .swiper-slide a span.title{font-size: 15px; line-height: 23px;}
+    .br_event .container .event_list .swiper .swiper-slide a span.period{margin: 8px 0;font-size: 12px;}
+
+    .br_event {height: 560px;}
+}
+@media screen and (max-width:720px){
+    #gnb{display: none}
+    .br_event .container .event_list .swiper .swiper-slide a span.period {
+        margin-bottom: 20px;}
+    .swiper-button-prev, .swiper-button-next {top: 38%;}
+    .br_event {
+      height: 500px;
+    }
+    
+}
+@media screen and (max-width:500px){
+  #header .top_area .container{width: 100%;}
+  .mobile_header{width: 100%;}
+
+  .list .product figure {font-size: 11px;}
+  .list .product figure .corn {left: -2px}
+
+  .list .item .hashtag_buy .buy a {left: 12px;}
+
+}
