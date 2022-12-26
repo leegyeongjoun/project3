@@ -21,10 +21,10 @@ $('.app-btn').on({click:function(){
 
 //swiper demos 사용한 곳
 $('.swiper').on('mouseover', function(){
-  second.autoplay.stop();
+  swiper.autoplay.stop();
 });
 $('.swiper').on('mouseout', function(){
-  second.autoplay.start();
+  swiper.autoplay.start();
 });
 
    var swiper = new Swiper(".second", {
