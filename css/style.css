@@ -275,7 +275,7 @@ position: relative; width: 1200px; margin: 0 auto;}
 .list .product{display: block; height: 303px;}
 .list .product figure{font-size: 12px;}
 .list .product figure figcaption{height: 56px; line-height: 1.2; font-weight: bold;}
-.list .product figure figcaption span{position: relative; top: 0; left: -11px;}
+.list .product figure figcaption span{position: relative; top: 0; left: -18px;}
 .ice{position: relative;}
 .list .product figure .img{display: block;
     position: relative;
@@ -284,7 +284,7 @@ position: relative; width: 1200px; margin: 0 auto;}
     text-align: center; z-index: 1;}
 .list .product figure .corn{/* background: url(../images/monthlybesticecream/corn.png) no-repeat center center; */ display: block;  position: relative; bottom: 107px; left: -18px;}
     
-.list .item .hashtag_buy{ position: absolute; width: 100%; top: 16px; left: -13px; font-size: 11px;}
+.list .item .hashtag_buy{ position: absolute; width: 100%; top: 16px; left: -20px; font-size: 11px;}
 .list .item .hashtag_buy .hashtag ul{display: flex; flex-direction: column;}
 .list .item .hashtag_buy .hashtag ul li{display: inline-block; flex-basis: 20%;}
 .list .item .hashtag_buy .hashtag ul li{display: inline-block; flex-basis: 20%;}
@@ -300,8 +300,9 @@ position: relative; width: 1200px; margin: 0 auto;}
     line-height: 35px;
     position: relative;
     bottom: -207px;
-    left: 0px;
+    left: 5px;
 }
+.list .item .hashtag_buy .buy a:hover{background: #c2b0aa;}
 
 .monthly {
     width: 100%;
@@ -478,6 +479,15 @@ position: relative; width: 1200px; margin: 0 auto;}
   .list .product figure {font-size: 11px;}
   .list .product figure .corn {left: -2px}
 
-  .list .item .hashtag_buy .buy a {left: 12px;}
+  .list .item .hashtag_buy .buy a {left: 7px;}
+  .list .item .hashtag_buy{left: -5px;}
+  .list .product figure figcaption span{left: -5px;}
 
+  /* 한줄로 만들려면  */
+  /* .list .item .hashtag_buy .buy a {left: 0px;} */
+  /* .list {flex-wrap: wrap;}
+  .list .item{flex-basis: 100%;}
+  .list .product figure .img{left: 0px;}
+  .list .product figure figcaption span{left: 0px;}
+  .list .item .hashtag_buy{left: 0;} */
 }
