@@ -336,9 +336,51 @@ position: relative; width: 1200px; margin: 0 auto;}
     object-fit: cover;
   }
 
+/* store와 배달창 */
+  .store_delivery{width: 100%; height: 350px; }
+  .store_delivery .container{max-width: 1200px; height: 350px; margin: 50px auto; display: flex;box-sizing: border-box;}
+  .store_delivery .container ul{flex-basis: 50%;}
+  .store_delivery .container .deliverytitle li{text-align: center;}
+  .store_delivery .container .deliverytitle li:first-child{padding-bottom: 50px;}
+
+  .store_delivery .container .deliveryContent li{text-align: center;}
+  .store_delivery .container .deliveryContent li:first-child{padding-bottom: 50px;}
+  .store_delivery .container .deliveryContent li:last-child a img{border-left: 1px solid #dbd8d1;}
+
+/* sns 모음들 */
+.snsbox{width: 100%; height: 300px;}
+.snsbox .container{width: 1200px; height:300px; margin: 0 auto;}
+.snsbox .container .title{text-align: center; padding: 50px 0 50px;}
+.snsbox .container .sns ul{display: flex; width: 100%; justify-content: center;}
+.snsbox .container .sns ul li{padding-left: 15px;}
+.snsbox .container .sns ul li a img{transition: .3s;}
+.snsbox .container .sns ul li a:hover img{transform: scale(1.2);}
+
+
+/* footer */
+#footer{width: 100%; padding-bottom: 60px; border-top: 1px solid #feaf2b;}
+#footer .policy{padding: 0 80px;}
+#footer .policy .container{width: 1200px; height: 77px; margin: 0 auto;}
+#footer .policy .container>ul{display: flex; justify-content: space-around; height: 100%; align-items: center;}
+#footer .policy .container>ul>li{ text-align: center;}
+#footer .policy .container>ul>li:nth-child(5) a{color: #ff7c98; font-weight: bold;}
+#footer .policy .container>ul>li>a{font-size: 14px; color: #726454; letter-spacing: -2px;}
 @media screen and (max-width:1350px){
     #slick_banner{display: none;}
     #mobile_banner{display: block;}
+    #footer .policy .container{width: 100%;}
+    #footer{width: 100%;}
+}
+@media screen and (max-width:1220px){
+  /* 매장찾기와 배달하기의 간격 */
+  .store_delivery {height: 700px;}
+  .store_delivery .container{flex-wrap: wrap;}
+  .store_delivery .container ul{flex-basis: 100%;}
+  .store_delivery .container .deliveryContent li:first-child {padding-top: 50px;}
+
+  .snsbox .container{width: 100%}
+  #footer .policy .container{width: 100%;}
+  #footer{width: 100%;}
 }
 @media screen and (max-width:1200px){
     .br_menu .menu_list{width: 100%;}
@@ -399,7 +441,14 @@ position: relative; width: 1200px; margin: 0 auto;}
     .br_menu{display: none;}
     .mobile_slider{display: block;}
     .br_event {height: 570px;}
-}
+
+    .mobile_slider .container .title {padding: 20px 0 30px;}
+
+    #footer .policy .container>ul{flex-wrap: wrap;}
+    #footer .policy .container>ul>li{flex-basis: 25%;}
+    #footer .policy .container>ul>li a{font-size: 13px;}
+  }
+
 
 @media screen and (max-width:900px){
     .br_event .container{width: 100%;}
@@ -467,11 +516,23 @@ position: relative; width: 1200px; margin: 0 auto;}
     .br_event .container .event_list .swiper .swiper-slide a span.period {
         margin-bottom: 20px;}
     .swiper-button-prev, .swiper-button-next {top: 38%;}
-    .br_event {
-      height: 500px;
-    }
-    
+    .br_event {height: 500px;}
+    .store_delivery .container .deliverytitle li:first-child{padding-bottom: 30px;}
+    .store_delivery .container .deliveryContent li:first-child{padding-bottom: 30px; padding-top: 30px;}
+    .store_delivery {height: 670px;}
+    .snsbox .container .title{padding: 30px 0 30px;}
 }
+@media screen and (max-width:620px) {
+  .store_delivery .container .deliverytitle li:last-child a img{width: 480px;}
+  .store_delivery .container .deliveryContent li:last-child a img{width: 480px;}
+
+  .store_delivery {height: 560px;}
+
+  #footer .policy .container>ul{flex-wrap: wrap;}
+  #footer .policy .container>ul>li{flex-basis: 100%;}
+  #footer .policy .container>ul>li a{font-size: 18px; padding-top: 5px; display: block;}
+} 
+    
 @media screen and (max-width:500px){
   #header .top_area .container{width: 100%;}
   .mobile_header{width: 100%;}
@@ -482,6 +543,7 @@ position: relative; width: 1200px; margin: 0 auto;}
   .list .item .hashtag_buy .buy a {left: 7px;}
   .list .item .hashtag_buy{left: -5px;}
   .list .product figure figcaption span{left: -5px;}
+
 
   /* 한줄로 만들려면  */
   /* .list .item .hashtag_buy .buy a {left: 0px;} */
