@@ -302,10 +302,7 @@ position: relative; width: 1200px; margin: 0 auto;}
     position: relative;
     bottom: -207px;
     left: 5px;
-<<<<<<< HEAD
     transition: .2s;
-=======
->>>>>>> d4853e0823e1c6875f3819d9441357cf9b72256a
 }
 .list .item .hashtag_buy .buy a:hover{background: #c2b0aa;}
 
